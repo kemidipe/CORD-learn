@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C.O.R.D Learn — Connecting Opportunities, Resources & Dreams</title>
+  <meta name="description" content="C.O.R.D Learn — Learn. Connect. Grow Your Dream Career." />
+  <style>
+    :root{
+      --blue1:#0ea5cc; /* cyan-ish */
+      --blue2:#2563eb; /* royal blue */
+      --bg-gradient: linear-gradient(135deg,var(--blue1),var(--blue2));
+      --glass: rgba(255,255,255,0.08);
+      --card: rgba(255,255,255,0.95);
+      --muted:#6b7280;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f8fbff 0%,#ffffff 40%);color:#0f172a}
+    header{background:var(--bg-gradient);color:white;padding:28px 20px;border-bottom-left-radius:24px;border-bottom-right-radius:24px}
+    .container{max-width:1100px;margin:0 auto}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:48px;height:48px;background:white;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--blue2);font-weight:800}
+    .logo h1{margin:0;font-size:20px}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{background:white;color:var(--blue2);padding:10px 14px;border-radius:10px;font-weight:600;border:none;cursor:pointer}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.18);color:white;padding:8px 12px;border-radius:10px}/* Hero */
+.hero{padding:40px 0 60px}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+.hero h2{font-size:36px;margin:0 0 10px}
+.hero p{margin:0 0 18px;color:#e6f7ff}
+.search{display:flex;gap:10px}
+.search input{padding:12px 14px;border-radius:10px;border:none;width:100%}
+
+/* cards */
+.features{display:flex;gap:18px;margin-top:18px}
+.card{background:var(--glass);padding:16px;border-radius:12px;backdrop-filter:blur(6px);color:white}
+
+/* Demo app mockup */
+.mockup{background:white;border-radius:16px;padding:18px;box-shadow:0 8px 30px rgba(23,23,23,0.08)}
+.mockup .tab{display:flex;gap:8px}
+.mockup .tab button{padding:8px 10px;border-radius:8px;border:none;background:#f1f5f9;color:#0f172a}
+.mockup .card-small{background:#f8fafc;padding:12px;border-radius:12px;margin-top:12px}
+
+/* sections */
+section{padding:40px 0}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(20,20,40,0.04)}
+footer{padding:28px 0;background:#0f172a;color:#cbd5e1}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .features-grid{grid-template-columns:1fr}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="mark">C</div>
+        <div>
+          <h1>C.O.R.D Learn</h1>
+          <div style="font-size:12px;opacity:0.9">Connecting Opportunities, Resources & Dreams</div>
+        </div>
+      </div>
+      <div class="cta">
+        <button class="btn-outline">Sign in</button>
+        <button class="btn">Join Now</button>
+      </div>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h2>Learn. Connect. Grow Your Dream Career.</h2>
+          <p>Build the skills employers need, get verified certificates, and connect directly with companies and investors across Africa.</p>
+          <div style="display:flex;gap:12px;align-items:center">
+            <button class="btn">Get Started — It's Free</button>
+            <a href="#features" style="color:var(--blue2);font-weight:600">See how it works →</a>
+          </div><div class="features" style="margin-top:22px">
+        <div class="card"><strong>10K+</strong> learners</div>
+        <div class="card"><strong>200+</strong> verified courses</div>
+        <div class="card"><strong>500+</strong> hiring partners</div>
+      </div>
+    </div>
+
+    <div class="mockup">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="font-weight:700">Student Dashboard</div>
+        <div style="font-size:12px;color:var(--muted)">Online • C.O.R.D Learn</div>
+      </div>
+
+      <div class="tab" style="margin-top:12px">
+        <button>Courses</button>
+        <button>Career Guide</button>
+        <button>Certificates</button>
+      </div>
+
+      <div class="card-small">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:700">Intro to Web & Career Basics</div>
+            <div style="font-size:13px;color:#475569">Progress 65% • Next lesson: HTML Basics</div>
+          </div>
+          <div style="font-weight:700;color:var(--blue2)">Continue</div>
+        </div>
+      </div>
+
+      <div class="card-small">
+        <div style="font-weight:700">AI Career Guide</div>
+        <div style="font-size:13px;color:#475569;margin-top:8px">Answer a few questions and get a career path matched to your skills.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <h3 style="margin:0">How C.O.R.D Learn Works</h3>
+      <p style="color:var(--muted);margin-top:6px">A simple pipeline from learning to hiring. Verified certificates, AI guidance, and employer connections all in one place.</p>
+    </div>
+    <div style="text-align:right">
+      <div style="font-weight:700">Ready to change your future?</div>
+      <button class="btn" style="margin-top:8px">Join C.O.R.D</button>
+    </div>
+  </div>
+
+  <div style="margin-top:20px" class="features-grid">
+    <div class="feature">
+      <h4>Verified Courses</h4>
+      <p style="color:var(--muted)">High-quality courses taught by industry experts and universities. Built to the standards employers trust.</p>
+    </div>
+    <div class="feature">
+      <h4>AI Career Guide</h4>
+      <p style="color:var(--muted)">Personalized career guidance using simple quizzes today and smart AI recommendations later.</p>
+    </div>
+    <div class="feature">
+      <h4>Certificates & Matching</h4>
+      <p style="color:var(--muted)">Complete courses, earn certificates, and appear in employer shortlists automatically.</p>
+    </div>
+  </div>
+</section>
+
+<section style="margin-top:20px">
+  <h3>Prototype Screens</h3>
+  <p style="color:var(--muted)">This quick mockup demonstrates the main screens for the student experience in our first MVP.</p>
+  <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+    <div style="flex:1;min-width:260px;background:white;padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(20,20,40,0.04)">
+      <h4 style="margin:0">Sign up</h4>
+      <p style="color:var(--muted);font-size:13px">Email, password, role (student/teacher/investor), basic profile.</p>
+    </div>
+    <div style="flex:1;min-width:260px;background:white;padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(20,20,40,0.04)">
+      <h4 style="margin:0">Course page</h4>
+      <p style="color:var(--muted);font-size:13px">Video lessons, docs, quizzes, progress tracker & certificate button.</p>
+    </div>
+    <div style="flex:1;min-width:260px;background:white;padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(20,20,40,0.04)">
+      <h4 style="margin:0">Certificate</h4>
+      <p style="color:var(--muted);font-size:13px">Auto-generated PDF certificate saved to profile and shareable link.</p>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <strong>C.O.R.D Learn</strong><br>
+        Connecting Opportunities, Resources & Dreams
+      </div>
+      <div style="text-align:right">
+        <div>Built by Dipe OLUWAFIKUNMI Olaoluwa</div>
+        <div style="color:#94a3b8;margin-top:6px">© C.O.R.D 2025</div>
+      </div>
+    </div>
+  </footer></body>
+</html>
