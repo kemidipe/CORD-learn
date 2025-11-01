@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C.O.R.D — Connecting Opportunities, Resources & Dreams</title>
+  <style>
+    :root {
+      --primary: #0077ff;
+      --accent: #00e1ff;
+      --bg1: #001d3d;
+      --bg2: #003566;
+      --text: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      text-shadow: 0 0 15px var(--primary);
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .btn-group {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--accent));
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 20px var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>C.O.R.D</h1>
+    <h2>Connecting Opportunities, Resources & Dreams</h2>
+  </header>
+
+  <section>
+    <p>Welcome to <strong>C.O.R.D</strong> — a revolutionary platform where students, professionals, and investors come together to learn, grow, and build the future of work.</p>
+
+    <div class="btn-group">
+      <button class="btn" onclick="alert('Student hub coming soon! 🚀')">Join as Student</button>
+      <button class="btn" onclick="alert('Teacher portal coming soon! 📘')">Teach a Skill</button>
+      <button class="btn" onclick="alert('Investor hub coming soon! 💼')">Invest in Ideas</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Dipe Oluwafikunmi Olaoluwa — Founder of C.O.R.D
+  </footer>
+</body>
+</html>
